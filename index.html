@@ -6,18 +6,18 @@
     </head>
     <body>
         <div>
-            <form name="Calculator">
-                <input name="display" placeholder="0" class="answer-bar"/>
+            <form name="calculator">
+                <input type="text" name="display" placeholder="0" class="answer-bar"/>
                 <br>
-                <input type="button" value="1" onclick="document.Calculator.display.value + ="1""/>
-                <input type="button" value="2" onclick="document.Calculator.display.value + ="2""/>
-                <input type="button" value="+" onclick="btnplus()"/>
+                <input class="number" type="button" value="1" onclick="document.calculator.display.value  =+1"/>
+                <input class="number" type="button" value="2" onclick="document.calculator.display.value  =+2"/>
+                <input type="button" value="+" onclick="plus()"/>
                 <br>
-                <input type="button" value="3" onclick="document.Calculator.display.value + ="3""/>
-                <input type="button" value="4" onclick="document.Calculator.display.value + ="4""/>
-                <input type="button" value="-" onclick="btnplus()"/>
+                <input class="number" type="button" value="3" onclick="document.calculator.display.value  =+3"/>
+                <input class="number" type="button" value="4" onclick="document.calculator.display.value  =+4"/>
+                <input type="button" value="-" onclick="sub()"/>
                 <br>
-                <input type="button" value="=" onclick="document.Calculator.display.value=eval(document.Calculator.display.value)"/>
+                <input class="equal" type="button" value="=" onclick="document.calculator.display.value=eval(document.calculator.display.value)"/>
             </form>
         </div>
        
