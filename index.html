@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+       <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <div>
+            <form>
+                <input name="display" placeholder="0" class="answer-bar"/>
+                <br>
+                <input type="button" value="1" onclick="document.Calculator.display.value + ="1""/>
+                <input type="button" value="2" onclick="document.Calculator.display.value + ="2""/>
+                <input type="button" value="+" onclick="btnplus()"/>
+                <br>
+                <input type="button" value="3" onclick="document.Calculator.display.value + ="3""/>
+                <input type="button" value="4" onclick="document.Calculator.display.value + ="4""/>
+                <input type="button" value="-" onclick="btnplus()"/>
+                <br>
+                <input type="button" value="=" onclick="document.Calculator.display.value=eval(document.Calculator.display.value)"/>
+            </form>
+        </div>
+       
+    </body>
+</html>
